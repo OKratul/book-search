@@ -47,4 +47,3 @@ let bookData =(items) =>{
 
 }
 
-
