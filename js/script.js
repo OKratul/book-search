@@ -8,6 +8,10 @@ let getbook = () => {
     if (searchText==''){
         let error = document.getElementById('error');
         error.innerHTML="Please Type Book Name";
+    }else{
+      error.innerHTML="Book Found";
+
+      error.style.color="black";
     }
     let url = `https://www.googleapis.com/books/v1/volumes?q=${searchText}`;
     fetch(url)
